@@ -1,4 +1,4 @@
-# RESTful MEN Stack To-Do Application With Authentication (Kimik Doğrulaması İle RESTful MEN Stack Yapılacaklar Listesi Uygulaması)
+# RESTful MEN Stack To-Do Application With Authentication (Kimik Doğrulamalı RESTful MEN Stack Yapılacaklar Listesi Uygulaması)
 
 A **RESTful** to-do application with authentication that developed using **MEN stack (MongoDB, Express, Node.js) and Sass** along with **BEM** front-end methodology and **MVC** software architecture.
 
