@@ -1,0 +1,75 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+	font-family: Roboto;
+}
+
+.container {
+	background-image: linear-gradient(to right, rgba($color-primary, 0.8), rgba($color-gradient-second, 0.8)), url(../img/bg.jpg);
+    background-size: cover;
+	background-position: top;
+	height: 100vh;
+	overflow: auto;
+}
+
+form {
+	display: inline;
+}
+
+h1 {
+	background: $color-primary;
+	color: white;
+	margin: 0;
+	padding: 10px 20px;
+	font-size: 24px;
+	font-weight: normal;
+	text-align: left;
+}
+
+li {
+	text-align: left;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+input {
+	font-size: 18px;
+	color: $color-primary;
+	background-color: $color-background-primary;
+	padding: 5px 5px 5px 0;
+	box-sizing: border-box;
+    border: 3px solid rgba(0, 0, 0, 0);
+
+    &:focus {
+        background: #fff;
+        border: 3px solid $color-primary;
+        outline: none;
+    }
+}
+
+::-webkit-input-placeholder {
+	text-align: center;
+}
+
+:-moz-placeholder {
+	/* Firefox 18- */
+	text-align: center;
+}
+
+::-moz-placeholder {
+	/* Firefox 19+ */
+	text-align: center;
+}
+
+:-ms-input-placeholder {
+	text-align: center;
+}

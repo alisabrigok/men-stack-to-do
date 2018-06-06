@@ -1,0 +1,42 @@
+{
+  "name": "men-stack-to-do",
+  "version": "0.1.0",
+  "description": "A RESTful to-do application with authentication developed using MEN stack and Sass",
+  "main": "app.js",
+  "scripts": {
+    "build-css": "node-sass public/assets/sass/main.scss public/assets/css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "dev": "concurrently \"node app.js\" \"npm run watch-css\"",
+    "start": "set NODE_ENV=production node ./app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alisabrigok/men-stack-to-do.git"
+  },
+  "keywords": [
+    "men",
+    "stack",
+    "restful",
+    "to-do",
+    "application",
+    "rest",
+    "todo",
+    "mvc",
+    "bem",
+    "yapilacaklar",
+    "listesi",
+    "uygulama",
+    "mongoDB",
+    "express",
+    "Sass",
+    "Nodejs",
+    "Node",
+    "Node.js"
+  ],
+  "author": "Ali Sabri GÖK <alisabrigok@gmail.com> (http://www.alisabri.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alisabrigok/men-stack-to-do/issues"
+  },
+  "homepage": "https://github.com/alisabrigok/men-stack-to-do#readme"
+}

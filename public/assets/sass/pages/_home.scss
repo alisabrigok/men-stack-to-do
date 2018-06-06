@@ -1,0 +1,45 @@
+.home {
+	text-align: center;
+    width: 404px;
+    margin: 100px auto;
+	border: 3px solid $color-primary;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+	border-radius: 5px;
+	height: 350px;
+	background-color: rgba(#ddd, 1);
+    display: block;
+    
+    a {
+        color: $color-primary;
+    }
+
+    &--error {
+	    border-color: red !important;
+    }
+
+    &--success {
+	    border-color: green !important;
+    }
+    
+    &__header {
+        color: white;
+        margin: 0;
+        padding: 30px 20px;
+        font-weight: normal;
+        font-size: 24px;
+        font-weight: normal;
+        background-color: $color-primary;
+    }
+
+    & a:hover {
+        color: $color-primary;
+    }
+
+    & input {
+        border-radius: 5px;
+    }
+}
+
+.login-input {
+	margin-top: 13px;
+}

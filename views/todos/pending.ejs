@@ -1,0 +1,80 @@
+<% include ../partials/header %>
+
+<div class="todo u-animateBottom">
+    <div class="todo__navigation">
+        <a class="todo__navigation--unselected" href = "/todos" > All </a>
+        <a class="todo__navigation--selected" href = "/todos/pending" > Pending </a>
+        <a class="todo__navigation--unselected" href = "/todos/done" > Done </a>
+    </div>
+
+    <h1>
+        <span class="u-ellipsis">
+            <a href="/user/<%= currentUser.id %>">
+                <span>
+                    <i class="fa fa-user"></i> 
+                    <%= currentUser.username.charAt(0).toUpperCase() + currentUser.username.slice(1) %>
+                </span>
+            </a>'s To-Do
+        </span>
+        <a href="/logout">
+            <i class="fa fa-sign-out"></i>
+        </a>
+    </h1>
+
+    <% if (error && error.length > 0) { %>
+        <h1 class="u-error">
+            <i class="fa fa-times"></i> <%= error %>
+        </h1>
+    <% } else if (success && success.length > 0) { %>
+        <h1 class="u-success">
+            <i class="fa fa-check"></i> <%= success %>
+            <span class="u-close">
+                <i class="fa fa-times"></i>
+                <span class="u-close__timer">
+                    (3)
+                </span>
+            </span>
+        </h1>
+    <% } %>
+
+    <form action="/todos/pending" method="POST">
+	    <input class="todo__add-todo" type="text" placeholder="Click Here To Add New To-Do" name="title">
+    </form>
+
+	<ul class="todo__list">
+        <% todos.forEach(function(todo){ %>
+            <% if (currentUser && todo.author.id.equals(currentUser._id)) { %>
+                <% if (!todo.isDone) { %>
+
+                    <li>
+                        <form class="todo__delete-form" action="/todos/pending/<%= todo._id %>?_method=DELETE" method="POST">
+                            <span class="todo__delete-todo icons">
+                                <i class="fa fa-trash fa-lg"></i>   
+                            </span>
+                        </form> 
+
+                        <form class="todo__edit-form" action="/todos/pending/<%= todo._id %>?_method=PUT" method="POST">
+                            <span class="u-ellipsis"><%= todo.title %></span>
+                            <input value="<%= todo.title %>" type="hidden" name="title">   
+                            <input type="hidden" name="isDone" value="<%= todo.isDone %>">               
+                            <span class="todo__edit-todo icons">
+                                <i class="fa fa-pencil fa-lg"></i>   
+                            </span>
+                        </form> 
+
+                        <form class="todo__done-form" action="/todos/pending/<%= todo._id %>?_method=PUT" method="POST">
+                            <span class="todo__done-todo icons">
+                                <i class="fa fa-check fa-lg"></i>
+                                <input type="hidden" name="title" value="<%= todo.title %>">   
+                                <input type="hidden" name="isDone" value="true">   
+                            </span>
+                        </form> 
+                    </li>
+
+                <% } %> 
+            <% } %> 
+        <% }); %>
+	</ul>
+</div>
+
+<% include ../partials/footer %>

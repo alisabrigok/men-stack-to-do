@@ -1,0 +1,17 @@
+.icons {
+	float: right;
+}
+
+li:hover .icons {
+	width: 40px;
+	opacity: 1.0;
+}
+
+.fa-sign-out {
+	color: white;
+    float: right;
+    
+    &:hover {
+        color: #ddd;
+    }
+}

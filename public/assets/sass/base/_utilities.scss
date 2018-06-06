@@ -1,0 +1,41 @@
+.u-error {
+    background-color: red !important;
+}
+
+.u-success {
+    background-color: green !important;    
+}
+
+.u-close {
+    float: right;
+
+    &:hover {
+        cursor: pointer;
+        color: #ddd;
+    }
+}
+
+.u-animateRight {
+    animation: moveInRight .4s ease-out;    
+}
+
+.u-animateLeft {
+    animation: moveInLeft .4s ease-out;    
+}
+
+.u-animateBottom {
+    animation: moveInBottom .4s ease-out;    
+}
+
+.u-ellipsis {
+	display: inline-block;
+	width: 68%;
+	white-space: nowrap !important;
+	overflow: hidden !important;
+    text-overflow: ellipsis;
+    vertical-align: bottom;
+
+    & a span:hover {
+        color: #ddd;
+    }
+}

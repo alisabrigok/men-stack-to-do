@@ -1,0 +1,136 @@
+.todo {
+	width: 404px;
+	margin: 100px auto;
+	background-color: rgba(#ddd, 1);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+    border-radius: 25px 25px 0px 0px;
+    text-align: center;
+    
+    &__navigation {
+        text-align: center;
+        background-color: transparent;
+        color: $color-primary;
+        margin: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: normal;
+        border-radius: 15px 15px 0 0;
+
+        &--unselected {
+            margin: 0;
+            width: 100%;
+            padding: 0 31px 0 31px;
+            color: $color-primary;
+            
+            &:hover {
+                color: darken($color-primary, 10%);
+            }
+        }
+
+        &--selected{
+            color: white;
+            background: $color-primary;
+            border-radius: 15px 15px 0 0;
+            padding: 10px 32px 10px 32px;
+            
+            
+
+            &:hover {
+                color: white;
+            }
+        }
+    }
+
+    & .login-input {
+        border-radius: 5px;
+    }
+
+    &__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        & li {
+            padding-left: 20px;
+            background: #fff;
+            height: 40px;
+            line-height: 40px;
+            color: #666;
+
+            &:nth-child(2n) {
+                background-color: $color-background-primary;
+            }
+        }
+        
+        &--completed .u-ellipsis {
+            color: #c2c2c2;
+            text-decoration: line-through;
+        }
+    }
+
+    &__add-todo {
+        font-size: 18px;
+        color: $color-primary;
+        background-color: $color-background-primary;
+        width: 100%;
+        padding: 13px 13px 13px 20px;
+        box-sizing: border-box;
+        border: 3px solid rgba(0, 0, 0, 0);
+
+        &:focus {
+            background: #fff;
+            border: 3px solid $color-primary;
+            outline: none;
+        }
+    }
+    &__delete-todo {
+        @include icon-boilerplate(#e74c3c);
+
+        &:hover {
+            cursor: pointer;
+
+            & .fa-trash {
+                @include icon-animation-boilerplate(-30deg);
+            }
+        }
+
+    }
+
+    &__edit-todo {
+        @include icon-boilerplate(#186411);
+
+        &:hover {
+            cursor: pointer;
+
+            & .fa-pencil {
+                @include icon-animation-boilerplate(-30deg);
+            }
+        }
+    }
+
+    &__done-todo {
+        @include icon-boilerplate(#0046c0);
+
+        &:hover {
+            cursor: pointer;
+
+            & .fa-check {
+                @include icon-animation-boilerplate(-10deg);
+            }
+        }
+    }
+
+    &__undone-todo {
+        @include icon-boilerplate(#000000);
+
+        &:hover {
+            cursor: pointer;
+
+            & .fa-times {
+                @include icon-animation-boilerplate(-10deg);
+            }
+        }
+    }
+}

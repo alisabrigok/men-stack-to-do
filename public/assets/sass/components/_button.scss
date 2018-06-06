@@ -1,0 +1,53 @@
+.btn-3d {
+	position: relative;
+	display: inline-block;
+	font-size: 22px;
+	padding: 20px 60px;
+	color: white !important;
+	margin: 25px 40px;
+	border-radius: 6px;
+	text-align: center;
+	transition: top .01s linear;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+	width: 200px;
+
+	&:active {
+		top: 9px;
+	}
+
+	&--primary {
+		background-color: $color-btn-bg-primary;
+		box-shadow: 0 0 0 1px $color-btn-shadow-primary inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 $color-btn-shadow-primary, 0 8px 0 1px rgba(0, 0, 0, 0.4), 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+
+		&:hover {
+			background-color: $color-btn-bg-primary;
+			cursor: pointer;
+		}
+
+		&:active {
+			box-shadow: 0 0 0 1px $color-btn-shadow-primary inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 0 0 1px rgba(0, 0, 0, 0.4);
+		}
+	}
+
+	&--secondary {
+		background-color: $color-btn-bg-secondary;
+		box-shadow: 0 0 0 1px $color-btn-shadow-secondary inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 rgba($color-btn-shadow-secondary, 0.7), 0 8px 0 1px rgba(0, 0, 0, .4), 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+
+		&:hover {
+			background-color: $color-btn-bg-secondary;
+			cursor: pointer;
+		}
+
+		&:active {
+			box-shadow: 0 0 0 1px $color-btn-shadow-secondary inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 0 0 1px rgba(0, 0, 0, 0.4);
+		}
+	}
+}
+
+.btn-flat {
+	border: none;
+	cursor: pointer;
+	outline: none;
+	color: red;
+	margin: 15px;
+}

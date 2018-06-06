@@ -1,0 +1,29 @@
+<% include partials/header %>
+
+<div class="home u-animateRight <%= error && error.length > 0 ? 'home--error': 'undefined' %> <%= success && success.length > 0 ? 'home--success': 'undefined' %>">
+    <% if (error && error.length > 0) { %>
+
+        <h2 class="home__header u-error"> <i class="fa fa-times"></i> <%= error %> </h2>
+
+    <% } else if (success && success.length > 0) { %>
+
+        <h2 class="home__header u-success"> <i class="fa fa-check"></i> <%= success %> </h2>
+
+    <% } else { %>
+    
+        <h2 class="home__header">PLEASE FILL THE FORM </h2>
+
+    <% } %>
+
+    <form action="/signup" method="POST">
+        <input type="text" class="login-input" name="username" placeholder="Enter Username" required>
+        <input type="password" class="login-input" name="password" placeholder="Enter Password" required>
+        <button class="btn-3d btn-3d--secondary" type="submit">SIGN UP <i class="fa fa-user-plus"></i></button>
+    </form>
+    
+    <br>
+
+    <a href="/"><i class="fa fa-arrow-left"></i> back</a>
+</div>
+
+<% include partials/footer %>
