@@ -9,13 +9,13 @@ Türkçe dökümantasyon için: [Tıklayın](https://github.com/alisabrigok/men-
 ## Features
 
   - CRUD Operations,
-  -- Add New To-Do, 
-  -- Update To-Do,
-  -- Delete To-Do
+  - Add New To-Do, 
+  - Update To-Do,
+  - Delete To-Do
   - Mark To-Dos As Completed,
   - Authentication (Meaning you need to sign up or login in order to use the app),
-  -- Ability to update credentials later on,
-  -- Ability to delete the user later on
+  - Ability to update credentials later on,
+  - Ability to delete the user later on
   - Authorization (Meaning each user can only interact with stuff that belong to them)
  
 ## Dependencies And Terms Breakdown
@@ -99,13 +99,13 @@ and try again with the npm dev command given above.
 
 - The application can be further enhanced with even more features. Some that come into my mind right now:
 
- -- To-do creation date-time (maybe using moment.js).
- -- To-do expiration time,
- -- To-do prioritization (maybe with drag and drop: the first one, the most important one),
- -- Forgot my password,
- -- An admin user,
- -- A better UI. This one is hard to be extended with features like this, unlike classic UIs with menubar and such. 
- -- Security. I didn't even implement a sanitizer to scrap entered JavaScript code input. express-sanitizer can be used for it.
+ - To-do creation date-time (maybe using moment.js).
+ - To-do expiration time,
+ - To-do prioritization (maybe with drag and drop: the first one, the most important one),
+ - Forgot my password,
+ - An admin user,
+ - A better UI. This one is hard to be extended with features like this, unlike classic UIs with menubar and such. 
+ - Security. I didn't even implement a sanitizer to scrap entered JavaScript code input. express-sanitizer can be used for it.
 
 Feel free to contact with me if you have any ideas.
 

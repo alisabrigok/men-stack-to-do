@@ -1,6 +1,6 @@
 # RESTful MEN Stack To-Do Application With Authentication (Kimik Doğrulaması İle RESTful MEN Stack Yapılacaklar Listesi Uygulaması)
 
-**MEN stack (MongoDB, Express, Node.js) ve Sass** kullanılarak, BEM ön-yüz metodolojisi ve MVC yazılım mimarisi ile birlikte geliştirilmiş, kimlik doğrulamalı, RESTful yapılacaklar listesi uygulaması.
+**MEN stack (MongoDB, Express, Node.js) ve Sass** kullanılarak, **BEM** ön-yüz metodolojisi ve **MVC** yazılım mimarisi ile birlikte geliştirilmiş, kimlik doğrulamalı, **RESTful** yapılacaklar listesi uygulaması.
 
 Bu, GitHub'a yüklesem iyi olurdu diye düşündüğüm eski bir projem. Bağlı paketleri (dependencies), sağını solunu biraz güncelleyip, her şeyin düzgünce çalıştığına emin olduktan buraya yükledim ve işte karşınızda.
 
@@ -9,13 +9,13 @@ For English: [Click Here](https://github.com/alisabrigok/men-stack-to-do/blob/ma
 ## Özellikler
 
   - CRUD Operasyonları,
-  -- Yeni Yapılacak Ekleme, 
-  -- Yapılacakları Güncelleme,
-  -- Yapılacakları Silme
+  - Yeni Yapılacak Ekleme, 
+  - Yapılacakları Güncelleme,
+  - Yapılacakları Silme
   - Yapılacakları tamamlandı olarak işaretleme,
   - Kimlik Doğrulama (Authentication, yani uygulamayı kullanmak için kayıt olmak veya kullanıcı girişi yapmak gerekiyor),
-  -- Kimlik bilgilerini daha sonradan güncelleyebilme,
-  -- Kullanıcıyı daha sonrada silebilme
+  - Kimlik bilgilerini daha sonradan güncelleyebilme,
+  - Kullanıcıyı daha sonrada silebilme
   - Yetkilendirme (Authorization, yani her kullanıcı yalnızca kendilerine ait olan şeylerle etkileşime geçebiliyor)
  
 ## Ön Koşullar
@@ -98,13 +98,13 @@ Devam etmeden önce: Bu paketlerin neredeyse hepsi senin daha az kod yazarak dah
 
 - Bu uygulama daha başka özelliklerle iyice geliştirilebilir. Şuan aklıma gelen bazıları:
 
- -- Yapılacak oluştururken tarih ve zaman kaydı alma (moment.js kullanırız belki).
- -- Yapılacaklar için son gün atama,
- -- Yapılacak önceliği (hem de belki sürükle bırak ile: ilk sırada yer alanın en önemli olduğu),
- -- Şifremi unuttum özelliği,
- -- Admin özelliklerine sahip bir kullanıcı,
- -- Daha iyi bir arayüzü. Klasik menülü arayüzlere göre, bu uygulamanınki bu tarz özellikler ve daha fazlasıyla iyice geliştirilmek için zor olabilir.
- -- Güvenlik. Input'lara girilen JavaScript kodlarını temizleyen bir güvenlik önlemi bile kullanmadım bu projede. Örneğin express-sanitizer paketi tam bu iş için biçilmiş kaftan, kullanılabilir.
+ - Yapılacak oluştururken tarih ve zaman kaydı alma (moment.js kullanırız belki).
+ - Yapılacaklar için son gün atama,
+ - Yapılacak önceliği (hem de belki sürükle bırak ile: ilk sırada yer alanın en önemli olduğu),
+ - Şifremi unuttum özelliği,
+ - Admin özelliklerine sahip bir kullanıcı,
+ - Daha iyi bir arayüzü. Klasik menülü arayüzlere göre, bu uygulamanınki bu tarz özellikler ve daha fazlasıyla iyice geliştirilmek için zor olabilir.
+ - Güvenlik. Input'lara girilen JavaScript kodlarını temizleyen bir güvenlik önlemi bile kullanmadım bu projede. Örneğin express-sanitizer paketi tam bu iş için biçilmiş kaftan, kullanılabilir.
 
 Daha farklı fikirlerin varsa benimle iletişime geçmeye ne dersin?
 
