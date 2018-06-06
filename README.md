@@ -4,7 +4,7 @@ A **RESTful** to-do application with authentication that developed using **MEN s
 
 This is an old project of mine which I thought would be nice to upload to GitHub. So I updated the dependencies, fixed here and there, tried to make sure everything was working properly and here it is.
 
-[Click Here To Try It](https://men-stack-to-do.herokuapp.com/)
+[Click Here To Try The App](https://men-stack-to-do.herokuapp.com/)
 
 Türkçe dökümantasyon için: [Tıklayın](https://github.com/alisabrigok/men-stack-to-do/blob/master/README.tr.md)
 
