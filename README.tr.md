@@ -14,7 +14,8 @@ For English: [Click Here](https://github.com/alisabrigok/men-stack-to-do/blob/ma
   -- Yapılacakları Silme
   - Yapılacakları tamamlandı olarak işaretleme,
   - Kimlik Doğrulama (Authentication, yani uygulamayı kullanmak için kayıt olmak veya kullanıcı girişi yapmak gerekiyor),
-  -- Kimlik bilgilerini daha sonradan güncelleyebilme
+  -- Kimlik bilgilerini daha sonradan güncelleyebilme,
+  -- Kullanıcıyı daha sonrada silebilme
   - Yetkilendirme (Authorization, yani her kullanıcı yalnızca kendilerine ait olan şeylerle etkileşime geçebiliyor)
  
 ## Ön Koşullar

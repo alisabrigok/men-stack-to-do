@@ -14,7 +14,8 @@ Türkçe dökümantasyon için: [Tıklayın](https://github.com/alisabrigok/men-
   -- Delete To-Do
   - Mark To-Dos As Completed,
   - Authentication (Meaning you need to sign up or login in order to use the app),
-  -- Ability to update credentials later on
+  -- Ability to update credentials later on,
+  -- Ability to delete the user later on
   - Authorization (Meaning each user can only interact with stuff that belong to them)
  
 ## Dependencies And Terms Breakdown
