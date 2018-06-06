@@ -4,6 +4,8 @@ A **RESTful** to-do application with authentication that developed using **MEN s
 
 This is an old project of mine which I thought would be nice to upload to GitHub. So I updated the dependencies, fixed here and there, tried to make sure everything was working properly and here it is.
 
+[Click Here To Try It](https://men-stack-to-do.herokuapp.com/)
+
 Türkçe dökümantasyon için: [Tıklayın](https://github.com/alisabrigok/men-stack-to-do/blob/master/README.tr.md)
 
 ## Features
@@ -11,11 +13,11 @@ Türkçe dökümantasyon için: [Tıklayın](https://github.com/alisabrigok/men-
   - CRUD Operations,
   - Add New To-Do, 
   - Update To-Do,
-  - Delete To-Do
+  - Delete To-Do,
   - Mark To-Dos As Completed,
   - Authentication (Meaning you need to sign up or login in order to use the app),
   - Ability to update credentials later on,
-  - Ability to delete the user later on
+  - Ability to delete the user later on,
   - Authorization (Meaning each user can only interact with stuff that belong to them)
  
 ## Dependencies And Terms Breakdown

@@ -4,6 +4,8 @@
 
 Bu, GitHub'a yüklesem iyi olurdu diye düşündüğüm eski bir projem. Bağlı paketleri (dependencies), sağını solunu biraz güncelleyip, her şeyin düzgünce çalıştığına emin olduktan buraya yükledim ve işte karşınızda.
 
+[Uygulamayı Denemek İçin Tıkla](https://men-stack-to-do.herokuapp.com/)
+
 For English: [Click Here](https://github.com/alisabrigok/men-stack-to-do/blob/master/README.md)
 
 ## Özellikler
@@ -11,11 +13,11 @@ For English: [Click Here](https://github.com/alisabrigok/men-stack-to-do/blob/ma
   - CRUD Operasyonları,
   - Yeni Yapılacak Ekleme, 
   - Yapılacakları Güncelleme,
-  - Yapılacakları Silme
+  - Yapılacakları Silme,
   - Yapılacakları tamamlandı olarak işaretleme,
   - Kimlik Doğrulama (Authentication, yani uygulamayı kullanmak için kayıt olmak veya kullanıcı girişi yapmak gerekiyor),
   - Kimlik bilgilerini daha sonradan güncelleyebilme,
-  - Kullanıcıyı daha sonrada silebilme
+  - Kullanıcıyı daha sonradan silebilme,
   - Yetkilendirme (Authorization, yani her kullanıcı yalnızca kendilerine ait olan şeylerle etkileşime geçebiliyor)
  
 ## Ön Koşullar
